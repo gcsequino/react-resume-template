@@ -44,8 +44,8 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'React Resume Template',
-  description: "Example site built with Tim Baker's react resume template",
+  title: 'gsequino.dev',
+  description: "Greyson Sequino's Dev Site",
 };
 
 /**
@@ -69,24 +69,24 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
+  name: `I'm Greyson Sequino.`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder.
+        I'm a Denver based <strong className="text-stone-100">Software Developer</strong>, currently working
+        at <strong className="text-stone-100">Deloitte</strong> helping implement, modern, security concious
+        software solutions for federal clients.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
-        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
-        <strong className="text-stone-100">Vancouver Island</strong>.
+        In my free time time, you can catch me <strong className="text-stone-100">skiing</strong>,
+        playing <strong className="text-stone-100">golf</strong>, or exploring different ways to make 
+        <strong className='test-stone-100'> coffee</strong>.
       </p>
     </>
   ),
   actions: [
     {
-      href: '/assets/resume.pdf',
+      href: "https://gsequino.dev",
       text: 'Resume',
       primary: true,
       Icon: ArrowDownTrayIcon,
@@ -104,16 +104,25 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  description: `As a Cyber Security Analyst at Deloitte, I work with clients from various industries
+                to assess, design, and implement solutions for their cyber security needs. I leverage
+                my expertise in full cycle software development to help optimize processes for both
+                efficiency and security. I graduated from Colorado State University in 2023 with a 
+                degree in Computer Science, specializing in Distributed Systems. During my studies, 
+                I also served as the Treasurer of the WiCyS Club and the Lead Teaching Assistant for 
+                several courses. I developed strong skills in computer science, consulting, and 
+                leadership, as well as a passion for learning and solving complex problems. I am 
+                motivated by the opportunity to apply my knowledge and skills to help clients achieve 
+                their goals and overcome their challenges. I value teamwork, innovation, and excellence, 
+                and I strive to deliver high-quality results and exceed expectations. I am always eager 
+                to learn new technologies and expand my horizons in the cyber security field.`,
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
-    {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon},
+    {label: 'Location', text: 'Denver, CO', Icon: MapIcon},
+    {label: 'Age', text: '23', Icon: CalendarIcon},
+    {label: 'Nationality', text: 'American', Icon: FlagIcon},
+    {label: 'Interests', text: 'Skiing, Golf, Coffee', Icon: SparklesIcon},
+    {label: 'Study', text: 'Colorado State University', Icon: AcademicCapIcon},
+    {label: 'Employment', text: 'Deloitte', Icon: BuildingOffice2Icon},
   ],
 };
 
@@ -127,14 +136,6 @@ export const skills: SkillGroup[] = [
       {
         name: 'English',
         level: 10,
-      },
-      {
-        name: 'French',
-        level: 4,
-      },
-      {
-        name: 'Spanish',
-        level: 3,
       },
     ],
   },
